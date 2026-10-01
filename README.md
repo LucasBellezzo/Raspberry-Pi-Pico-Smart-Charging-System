@@ -10,7 +10,9 @@ Fórmula utilizada:
 
 Energia disponível = Geração - Consumo
 ⚡ Estados da Recarga
+
 Estado	Condição	LED	Status
+
 Energia suficiente	energia > 1000 W	🟢 Verde	RECARGA AUTORIZADA
 
 Energia limitada	0 < energia ≤ 1000 W	🟡 Amarelo	RECARGA REDUZIDA
