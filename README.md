@@ -12,8 +12,11 @@ Energia disponível = Geração - Consumo
 ⚡ Estados da Recarga
 Estado	Condição	LED	Status
 Energia suficiente	energia > 1000 W	🟢 Verde	RECARGA AUTORIZADA
+
 Energia limitada	0 < energia ≤ 1000 W	🟡 Amarelo	RECARGA REDUZIDA
+
 Energia insuficiente	energia ≤ 0 W	🔴 Vermelho	RECARGA BLOQUEADA
+
 🔌 Hardware / Ligações
 Componente	Pino no Pico
 LED Verde	GP3
@@ -23,9 +26,12 @@ LED Vermelho	GP1
 O circuito pode ser montado fisicamente ou simulado no Wokwi.
 
 🖥️ Como executar
-Abra o projeto no simulador Wokwi usando o PiPico
-Copie o arquivo main.py via upload direto no Wokwi
-Execute o script — o programa roda automaticamente três cenários de teste e imprime os resultados no Monitor Serial
+>Abra o projeto no simulador Wokwi usando o PiPico
+
+>Copie o arquivo main.py via upload direto no Wokwi
+
+>Execute o script — o programa roda automaticamente três cenários de teste e imprime os resultados no Monitor Serial
+
 🧪 Cenários de teste incluídos
 python
 controlar_recarga(4500, 2500)  # Energia suficiente  -> LED verde
