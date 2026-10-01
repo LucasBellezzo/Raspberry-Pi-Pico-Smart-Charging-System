@@ -23,9 +23,9 @@ LED Vermelho	GP1
 O circuito pode ser montado fisicamente ou simulado no Wokwi.
 
 🖥️ Como executar
-Grave o MicroPython no Raspberry Pi Pico (ou abra o projeto no simulador Wokwi).
-Copie o arquivo main.py para o Pico (via Thonny, VS Code com extensão MicroPython, ou upload direto no Wokwi).
-Execute o script — o programa roda automaticamente três cenários de teste e imprime os resultados no Monitor Serial.
+Abra o projeto no simulador Wokwi usando o PiPico
+Copie o arquivo main.py via upload direto no Wokwi
+Execute o script — o programa roda automaticamente três cenários de teste e imprime os resultados no Monitor Serial
 🧪 Cenários de teste incluídos
 python
 controlar_recarga(4500, 2500)  # Energia suficiente  -> LED verde
@@ -42,7 +42,7 @@ Consumo  : 2500 W
 Energia  : 2000 W
 Status   : RECARGA AUTORIZADA
 ==============================
-🔢 Representação de dados
+
 
 Demonstração da energia disponível em diferentes bases numéricas (exemplo com 2000 W):
 
@@ -51,8 +51,3 @@ Decimal	2000
 Binário	11111010000
 Hexadecimal	0x7D0
 
-🏗️ Relação com Arquitetura de Computadores
-Entrada (Input): valores simulados de geração e consumo de energia.
-Processamento: cálculo da energia disponível e lógica condicional para determinar o estado da recarga.
-Memória: variáveis armazenando temporariamente os dados de geração, consumo, energia e status durante a execução.
-Saída (Output): acionamento dos LEDs (sinalização física) e impressão dos dados no Monitor Serial (sinalização textual).
